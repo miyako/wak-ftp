@@ -8,7 +8,7 @@ About
 
 The module includes [lftp](http://lftp.yar.ru) 4.6.0 executable for Mac and Windows x64, 4.5.6 for Linux x64.
 
-The executables for Mac are built with @loader_path and for Linux with $ORIGIN, so no need to install lftp.
+The executables for Mac are built with @loader_path and for Linux with $ORIGIN, so no need to install lftp, iconv, intl, idn, readline, zlib, gmp, nettle, hogweed or gnutls.
 
 Install
 -------
