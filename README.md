@@ -6,9 +6,11 @@ Wakanda FTP Module.
 About
 -----
 
-The module includes [lftp](http://lftp.yar.ru) 4.6.0 executable for Mac and ~~Windows x64~~, 4.5.6 for Linux x64.
+The module includes [lftp](http://lftp.yar.ru) 4.6.0 executable for Mac, Windows x64, and Linux x64.
 
 The executables for Mac are built with @loader_path and for Linux with $ORIGIN, so no need to install lftp, libiconv, libintl, libidn, libreadline, zlib, libgmp, libnettle, libhogweed or libgnutls.
+
+* Note: The binaries for Mac and Linux were built from the standard GNU source code, and uses libgnutls. The binary for Windows were obtained from [here](http://nwgat.ninja/lftp-for-windows/) and uses OpenSSL. 
 
 Install
 -------
