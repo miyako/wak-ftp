@@ -1,0 +1,1 @@
+﻿var modulesFolder = FileSystemSync('Modules');var ftp = require(modulesFolder.path + 'ftp');var code = '';code += 'open ftp://ftp.4d.com\n';code += 'lcd ~/Downloads/\n';code += 'get Favicon.ico\n';code += 'bye\n';ftp.ftp(code);
