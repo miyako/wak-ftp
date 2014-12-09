@@ -69,5 +69,5 @@ The advantage is that your require code would be clean and simple. The abstracti
 You do need to care about modules with the same name, installed in a search path with a higher precedence. For example, you can't require a module named "crpto", for example, because that name is already taken by a native module.
 
 ---
-**Note**: The rules apply to CommonJS modules installed on the server side. Keep in mind that for a module to be published as an [RPC](http://doc.wakanda.org/Using-JSON-RPC-Services/Configuring-CommonJS-Modules-for-RPC.300-306585.en.html) service, it mustbe found in the standard location, the Modules folder of the project.
+**Note**: These rules apply to CommonJS modules installed on the server side. Keep in mind that for a module to be published as an [RPC](http://doc.wakanda.org/Using-JSON-RPC-Services/Configuring-CommonJS-Modules-for-RPC.300-306585.en.html) service, it mustbe found in the standard location, the Modules folder of the project.
 
