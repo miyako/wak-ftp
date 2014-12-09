@@ -12,7 +12,7 @@ This document explains various ways to acheive this.
 
 ---
 
-**Solution 2**: Use an abosolute path to a location inside the solution
+**Solution 2**: Use an absolute path to a location inside the solution
 
 For example:
 ```
