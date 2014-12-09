@@ -28,7 +28,7 @@ Note that the subpath (Modules/ in the example above) needs to be hard-coded for
 
 Create a [filesystems.js](http://doc.wakanda.org/Files-and-Folders/Customizing-FileSystem-Definitions.200-1037821.en.html), if you don't already have one, and define a location named "Modules".
 
-The module can be anywhere on your file system, but it needs to be inside the solution for it to suface in the solution explorer.
+The module can be anywhere on your file system, but it needs to be inside the solution for it to surface in the solution explorer.
 
 For example, to define a location inside the solution:
 ```
