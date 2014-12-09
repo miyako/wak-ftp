@@ -18,9 +18,9 @@ For example:
 ```
 var ftp = require(solution.getFolder("path") + "Modules/ftp");
 ```
-The advantage is that you can define a portable path relative to the solution. 
+The advantage is that you can define a portable path relative to the solution.
 
-Note that the subpath (Modules/ in the example above) is hard-coded for each require call.
+Note that the subpath (Modules/ in the example above) needs to be hard-coded for each require call.
 
 ---
 
