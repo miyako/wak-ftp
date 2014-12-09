@@ -46,7 +46,7 @@ var ftp = require(modulesFolder.path + 'ftp');
 ```
 The advantage is that the abstraction is created through filesystems.js, over which you have full control during development.
 
-You are effectively passing an absolute path to require, which rules out ambiguity, but the advantage of using a file system oject is that the custom location can be adjusted for specific solutions by editing the filesystems.json file.
+You are effectively passing an absolute path to require, which rules out ambiguity, but the advantage of using a file system object is that the custom location can be easily adjusted by editing the filesystems.json file.
 
 ---
 
