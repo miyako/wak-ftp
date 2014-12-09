@@ -44,7 +44,7 @@ The code to load a module inside this location would be:
 var modulesFolder = FileSystemSync('Modules');
 var ftp = require(modulesFolder.path + 'ftp');
 ```
-The advantage is that the abstraction is created through filesystems.js, over which you have full control during development. (The filesystem is defined once when the solution is started.)
+The advantage is that the abstraction is created through filesystems.js, over which you have full control during development.
 
 You are effectively passing an absolute path to require, which rules out ambiguity, but the advantage of a filesystem is that the module can be located anywhere, and moved around, by just changing the files system object. 
 
