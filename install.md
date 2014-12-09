@@ -70,6 +70,7 @@ You do need to care about modules with the same name, installed in a search path
 
 ---
 **Note**: These rules apply to CommonJS modules installed for server side JS calls. Keep in mind that for a module to be published as an [RPC](http://doc.wakanda.org/Using-JSON-RPC-Services/Configuring-CommonJS-Modules-for-RPC.300-306585.en.html) service, it must be found in the standard location, the Modules folder of the project.
+
 ---
 **Note**: The solution directory is used as an example of a non-standard location in the above examples, only for the sake of consistency. It is not meant to suggest that such is best practice. In fact, the solution directory is probably the least preferable location for organizing reusable code. The solution directory is great for storing application scoped code, not shared code. Downside is that you don't see the modules in the solution explorer. 
 
