@@ -58,7 +58,7 @@ The module can be anywhere on your file system, but it needs to be inside the so
 
 For example, to define a location inside the solution:
 ```
-require.paths.push(solution.getFolder("path")  + '/Modules/');
+require.paths.push(solution.getFolder("path")  + 'Modules/');
 ```
 The code to load a module inside this location would be:
 ```
