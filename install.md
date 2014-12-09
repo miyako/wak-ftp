@@ -8,5 +8,31 @@ This document explains various ways to acheive this.
 
 **Solution 1**: Use a dedicated project
 
+**Solution 2**: Use an abosolute path to a location inside the solution
+
+For example:
+```
+var ftp = require(solution.getFolder("path") + "Modules/ftp");
+```
+**Solution 3**: Define a filesystems.json at the solution or project level (my preference)
+
+* Create a solution level filesystems.js, if you don't already have one, and define a location named "Modules".
+The module can be anywhere on your file system, but it needs to be inside the solution for it to suface in the solution explorer.
+
+For example, to define a location inside the solution:
+```
+  {
+  "name":"Modules",
+  "parent":"SOLUTION",
+  "path":"Modules",
+  "writable":true
+  }  
+```
+The code to load a module inside this location would be:
+```
+var modulesFolder = FileSystemSync('Modules');
+var ftp = require(modulesFolder.path + 'ftp');
+```
+**Solution 4**: Define a custom location in [require.paths](http://doc.wakanda.org/Global-Application/Application/require.301-664756.en.html)
 
 
