@@ -10,7 +10,7 @@ This document explains various ways to acheive this.
 
 **Solution 1**: Use a dedicated project
 
-Every modules follows your system's calling convention.
+Every module follows your system's calling convention.
 
 ---
 
