@@ -6,9 +6,11 @@ However, you may want to store a certain module elsewhere, to share between mult
 
 This document explains various ways to acheive this.
 
+---
+
 **Solution 1**: Use a dedicated project
 
-The code to load a module inside this location would be specific to your project setup and calling convention.
+---
 
 **Solution 2**: Use an abosolute path to a location inside the solution
 
@@ -16,9 +18,11 @@ For example:
 ```
 var ftp = require(solution.getFolder("path") + "Modules/ftp");
 ```
-**Discussion**: The advantage is that you can define a portable path relative to the solution. 
+The advantage is that you can define a portable path relative to the solution. 
 
 Note that the subpath (Modules/ in the example above) is hard-coded for each require call.
+
+---
 
 **Solution 3**: Define a filesystems.json at the solution or project level (my preference)
 
@@ -40,9 +44,11 @@ The code to load a module inside this location would be:
 var modulesFolder = FileSystemSync('Modules');
 var ftp = require(modulesFolder.path + 'ftp');
 ```
-**Discussion**: The advantage is that the abstraction is created through filesystems.js, over which you have full control during development. (The filesystem is defined once when the solution is started.)
+The advantage is that the abstraction is created through filesystems.js, over which you have full control during development. (The filesystem is defined once when the solution is started.)
 
 You are effectively passing an absolute path to require, which rules out ambiguity, but the advantage of a filesystem is that the module can be located anywhere, and moved around, by just changing the files system object. 
+
+---
 
 **Solution 4**: Define a custom location in [require.paths](http://doc.wakanda.org/Global-Application/Application/require.301-664756.en.html)
 
@@ -58,6 +64,6 @@ The code to load a module inside this location would be:
 ```
 var ftp = require('ftp');
 ```
-**Discussion**: The advantage is that your require code would be clean and simple. The abstraction is created by required.js, over which you have full control at runtime. 
+The advantage is that your require code would be clean and simple. The abstraction is created by required.js, over which you have full control at runtime. 
 
 You do need to care about modules with the same name, installed in a search path with a higher precedence. For example, you can't require a module named "crpto", for example, because that name is already taken by a native module.
