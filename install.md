@@ -52,7 +52,7 @@ You are effectively passing an absolute path to require, which rules out ambigui
 
 **Solution 4**: Define a custom location in [require.paths](http://doc.wakanda.org/Global-Application/Application/require.301-664756.en.html)
 
-Create a **required.js** at the [solution](http://doc.wakanda.org/Architecture-of-Wakanda-Applications/Solution.200-1022674.en.html) or [project](http://doc.wakanda.org/Architecture-of-Wakanda-Applications/Project.200-1022680.en.html) level, if you don't already have one, and define a location search path with your preferred order of precedence.
+Create a **required.js** at the [solution](http://doc.wakanda.org/Architecture-of-Wakanda-Applications/Solution.200-1022674.en.html) or [project](http://doc.wakanda.org/Architecture-of-Wakanda-Applications/Project.200-1022680.en.html) level, if you don't already have one, and define a location search path with an appropriate order of precedence.
 
 The module can be anywhere on your file system, but it needs to be inside the solution for it to surface in the solution explorer.
 
