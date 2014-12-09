@@ -10,8 +10,6 @@ This document explains various ways to acheive this.
 
 **Solution 1**: Use a dedicated project
 
-Every module follows your system's calling convention.
-
 ---
 
 **Solution 2**: Use an absolute path to a location inside the solution
