@@ -14,7 +14,7 @@ The executables for Mac are built with @loader_path and for Linux with $ORIGIN, 
 
 Install
 -------
-Please read [install.md](install.md)
+Please read [install](install.md).
 
 Example
 -------
