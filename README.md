@@ -14,21 +14,7 @@ The executables for Mac are built with @loader_path and for Linux with $ORIGIN, 
 
 Install
 -------
-The module can be installed in any solution.
-
-* Create a solution level filesystems.js, if you don't already have one, and follow the example.
-```
-  {
-  "name":"Modules",
-  "parent":"SOLUTION",
-  "path":"Modules",
-  "writable":true
-  }  
-```
-
-That' it!
-
-Example
+Please read [install.md](install.md)
 -------
 ```
 var modulesFolder = FileSystemSync('Modules');
