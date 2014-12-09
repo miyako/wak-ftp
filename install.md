@@ -6,5 +6,5 @@ However, you may want to store a certain module elsewhere, to share between mult
 
 This document explains various ways to acheive this.
 
-Use a dedicated project 
------------------------
+**Use a dedicated project** 
+
